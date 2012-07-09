@@ -13,7 +13,7 @@ package robotlegs.bender.demos.hello
 	import robotlegs.bender.framework.api.IContext;
 	import robotlegs.bender.framework.impl.Context;
 
-	public class App extends Sprite
+	public class HelloFlashApp extends Sprite
 	{
 
 		/*============================================================================*/
@@ -26,7 +26,7 @@ package robotlegs.bender.demos.hello
 		/* Constructor                                                                */
 		/*============================================================================*/
 
-		public function App()
+		public function HelloFlashApp()
 		{
 			_context = new Context()
 				.extend(MVCSBundle)

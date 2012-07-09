@@ -8,7 +8,7 @@
 package
 {
 	import flash.display.Sprite;
-	import robotlegs.bender.demos.hello.App;
+	import robotlegs.bender.demos.hello.HelloFlashApp;
 
 	[SWF(width="600", height="400", frameRate="30", backgroundColor="#FFFFFF")]
 	public class HelloFlash extends Sprite
@@ -18,7 +18,7 @@ package
 		/* Private Properties                                                         */
 		/*============================================================================*/
 
-		private var _app:App;
+		private var _app:HelloFlashApp;
 
 		/*============================================================================*/
 		/* Constructor                                                                */
@@ -26,7 +26,7 @@ package
 
 		public function HelloFlash()
 		{
-			_app = new App();
+			_app = new HelloFlashApp();
 			addChild(_app);
 		}
 	}
