@@ -9,7 +9,7 @@ package robotlegs.bender.demos.hello.views
 {
 	import flash.events.MouseEvent;
 	import robotlegs.bender.bundles.mvcs.Mediator;
-	import robotlegs.bender.extensions.logging.impl.LogMessageParser;
+	import robotlegs.bender.extensions.enhancedLogging.impl.LogMessageParser;
 	import robotlegs.bender.framework.api.IContext;
 	import robotlegs.bender.framework.api.ILogTarget;
 	import robotlegs.bender.framework.api.ILogger;

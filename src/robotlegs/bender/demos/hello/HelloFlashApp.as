@@ -10,6 +10,7 @@ package robotlegs.bender.demos.hello
 	import flash.display.Sprite;
 	import robotlegs.bender.bundles.mvcs.MVCSBundle;
 	import robotlegs.bender.demos.hello.config.AppConfig;
+	import robotlegs.bender.extensions.contextView.ContextView;
 	import robotlegs.bender.framework.api.IContext;
 	import robotlegs.bender.framework.impl.Context;
 
@@ -29,8 +30,9 @@ package robotlegs.bender.demos.hello
 		public function HelloFlashApp()
 		{
 			_context = new Context()
-				.extend(MVCSBundle)
-				.configure(AppConfig, this);
+				.install(MVCSBundle)
+				.configure(AppConfig)
+				.configure(new ContextView(this));
 		}
 	}
 }
